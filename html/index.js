@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 4000
+const port = 5000
 
-app.get('/api/user', (req, res) => res.send({name: 'Benwei'}))
+app.use(express.static('public'))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
